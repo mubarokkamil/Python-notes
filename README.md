@@ -11,4 +11,4 @@ This repository contains structured Python notes for beginners.
 3. [Built-in Data Types & Numbers](data-types.md)
 4. [Strings in Python](strings.md)
 5. [Python Booleans](booleans.md)
-6. 
+6. [Python Operators](operator.md)
