@@ -12,3 +12,4 @@ This repository contains structured Python notes for beginners.
 4. [Strings in Python](strings.md)
 5. [Python Booleans](booleans.md)
 6. [Python Operators](operator.md)
+7. [Python Lists](Python_Lists.md)
