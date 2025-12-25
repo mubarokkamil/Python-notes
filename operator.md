@@ -2,16 +2,20 @@
 
 ## Arithmetic Operators
 
+## Arithmetic Operators
+
 Arithmetic operators are used with numeric values to perform common mathematical operations.
-| Operator | Name           | Example |
-|----------|----------------|---------|
-| +        | Addition       | x + y   |
-| -        | Subtraction    | x - y   |
-| *        | Multiplication | x * y   |
-| /        | Division       | x / y   |
-| %        | Modulus        | x % y   |
-| **       | Exponentiation | x ** y  |
-| //       | Floor Division | x // y  |
+
+| Operator | Name            | Example  |
+| -------- | --------------- | -------- |
+| +        | Addition        | x + y    |
+| -        | Subtraction     | x - y    |
+| *        | Multiplication  | x * y    |
+| /        | Division        | x / y    |
+| %        | Modulus         | x % y    |
+| **       | Exponentiation  | x ** y   |
+| //       | Floor division  | x // y   |
+
 
 Example:  
 ```python
@@ -392,25 +396,23 @@ print(x >> 1)  # 2
 
 ## Operator Precedence in Python
 
-Operator precedence determines the order in which operations are evaluated in an expression.
-Operators with higher precedence are evaluated before operators with lower precedence.
+The precedence order is described in the table below, starting with the highest precedence at the top:
 
-Precedence Order (Highest → Lowest):  
-| Operator                                      | Description                                       |            
-| -------------------------------------------- | ------------------------------------------------- |            
-| ()                                           | Parentheses                                       |            
-| **                                           | Exponentiation                                    |            
-| +x  -x  ~x                                   | Unary plus, unary minus, bitwise NOT              |            
-| *  /  //  %                                  | Multiplication, division, floor division, modulus |            
-| +  -                                         | Addition and subtraction                          |            
-| <<  >>                                       | Bitwise left and right shifts                     |            
-| &                                            | Bitwise AND                                       |            
-| ^                                            | Bitwise XOR                                       |            
-| ==  !=  >  >=  <  <=  is  is not  in  not in | Comparison, identity, membership                  |            
-| not                                          | Logical NOT                                       |            
-| and                                          | Logical AND                                       |            
-| or                                           | Logical OR                                        |            
-
+| Operator | Description |
+| :--- | :--- |
+| `()` | Parentheses |
+| `**` | Exponentiation |
+| `+x`, `-x`, `~x` | Unary plus, unary minus, and bitwise NOT |
+| `*`, `/`, `//`, `%` | Multiplication, division, floor division, and modulus |
+| `+`, `-` | Addition and subtraction |
+| `<<`, `>>` | Bitwise left and right shifts |
+| `&` | Bitwise AND |
+| `^` | Bitwise XOR |
+| `\|` | Bitwise OR |
+| `==`, `!=`, `>`, `>=`, `<`, `<=`, `is`, `is not`, `in`, `not in` | Comparisons, identity, and membership operators |
+| `not` | Logical NOT |
+| `and` | AND |
+| `or` | OR |
 
 ### Left-to-Right Evaluation Rule
 
