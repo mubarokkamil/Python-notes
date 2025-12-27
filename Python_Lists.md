@@ -220,3 +220,155 @@ print(thislist)         #Output: ['apple', 'banana', 'cherry', 'mango', 'pineapp
 ```
 
 
+## Remove List Items
+
+The `remove()` method removes the specified item.
+
+Example:  
+Remove "banana":
+```python
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)     #OUTPUT: ['apple', 'cherry']
+```
+
+
+If there are more than one item with the specified value, the remove() method removes the first occurrence:
+
+Example:  
+Remove the first occurrence of "banana":
+```python
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist)     #Output: ['apple', 'cherry', 'banana', 'kiwi']
+```
+
+
+
+## Remove Specified Index  
+The `pop()` method removes the specified index.
+
+Example:   
+```python
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)    #Output: ['apple', 'cherry']
+```
+But,  
+If you do not specify the index, the `pop()` method removes the last item.
+
+Example:  
+```python
+thislist = ["apple", "banana", "cherry"]
+thislist.pop()
+print(thislist)   #Output: ['apple', 'banana']
+```
+
+
+The `del` keyword also removes the specified index:
+
+Example:  
+```python
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)  #Output: ['banana', 'cherry']
+```
+
+The `del` keyword can also delete the list completely.
+
+Example:  
+```python
+thislist = ["apple", "banana", "cherry"]
+del thislist
+```
+
+
+### Clear the List
+The `clear()` method empties the list.
+
+The list still remains, but it has no content.
+
+Example:  
+```python
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)   #Output: []
+```
+
+
+## Loop Through a List  
+You can loop through the list items by using a for loop:
+
+Example:  
+```python
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+```
+
+
+### Loop Through the Index Numbers
+You can also loop through the list items by referring to their index number.
+
+Use the range() and len() functions to create a suitable iterable.
+
+Example:  
+```python
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+```
+
+
+### Using a While Loop
+You can loop through the list items by using a while loop.
+
+Example:  
+```python
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+```
+
+### Looping Using List Comprehension
+
+Example:  
+```python
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+```
+
+
+## List Comprehension
+List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+
+Example:
+
+Based on a list of fruits, you want a new list, containing only the fruits with the letter "a" in the name.
+
+Example:  
+```python
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+print(newlist)     #Output: ['apple', 'banana', 'mango']
+```
+
+
+With list comprehension you can do all that with only one line of code:
+
+Example:  
+```python
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+```
+
+
